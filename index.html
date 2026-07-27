@@ -1,0 +1,1589 @@
+
+<!--    
+
+    /$$ /$$    /$$                /$$$$$$             /$$$$$$   /$$                                                       /$$ /$$   
+   /$$/| $$   | $$               /$$__  $$           /$$__  $$ | $$                                                      /$$/|  $$  
+  /$$/ | $$   | $$ /$$$$$$/$$$$ | $$  \__/  /$$$$$$ | $$  \__//$$$$$$   /$$  /$$  /$$  /$$$$$$   /$$$$$$   /$$$$$$      /$$/  \  $$ 
+ /$$/  |  $$ / $$/| $$_  $$_  $$|  $$$$$$  /$$__  $$| $$$$   |_  $$_/  | $$ | $$ | $$ |____  $$ /$$__  $$ /$$__  $$    /$$/    \  $$
+|  $$   \  $$ $$/ | $$ \ $$ \ $$ \____  $$| $$  \ $$| $$_/     | $$    | $$ | $$ | $$  /$$$$$$$| $$  \__/| $$$$$$$$   /$$/      /$$/
+ \  $$   \  $$$/  | $$ | $$ | $$ /$$  \ $$| $$  | $$| $$       | $$ /$$| $$ | $$ | $$ /$$__  $$| $$      | $$_____/  /$$/      /$$/ 
+  \  $$   \  $/   | $$ | $$ | $$|  $$$$$$/|  $$$$$$/| $$       |  $$$$/|  $$$$$/$$$$/|  $$$$$$$| $$      |  $$$$$$$ /$$/      /$$/  
+   \__/    \_/    |__/ |__/ |__/ \______/  \______/ |__/        \___/   \_____/\___/  \_______/|__/       \_______/|__/      |__/   
+                                                                                                                                    
+                                                                                                                                    
+     Nos siga em nossa rede social:  https://www.instagram.com/vm_software/                                                                                                                               
+                                                                                                                                   
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://vmsoftware.netlify.app/iconlogo.webp" type="image/x-icon" />
+    <title>Sites Profissionais para Empresas | VM Software</title>
+
+    <meta name="description"
+        content="Criamos sites profissionais, rápidos e modernos para empresas que desejam vender mais e fortalecer sua presença digital.">
+
+    <meta name="keywords"
+        content="criação de sites, desenvolvimento web, site institucional, VM Software, Ourinhos, São Paulo">
+
+    <meta name="author" content="VM Software">
+
+    <meta property="og:title" content="vm_software">
+    <meta property="og:description" content="Sua empresa pode estar perdendo clientes">
+    <meta property="og:image" content="https://lpconvetion.netlify.app/assets/heroimg.webp">
+    <meta property="og:url" content="https://vm-landingpage.netlify.app/">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="./favicon-32x32.png">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tailwind -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+
+
+    <script>
+        tailwind.config = {
+
+            theme: {
+
+                extend: {
+
+                    colors: {
+
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        dark: '#111827',
+                        light: '#F9FAFB',
+
+                        gradientStart: '#6366F1',
+                        gradientEnd: '#8B5CF6'
+
+                    },
+
+                    fontFamily: {
+
+                        sans: ['Inter', 'sans-serif']
+
+                    }
+
+                }
+
+            }
+
+        }
+    </script>
+
+    <style>
+
+        html {
+
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+
+            font-family: 'Inter', sans-serif;
+            background: #F8FAFC;
+            color: #1F2937;
+
+        }
+
+        /* ========================= */
+
+        /* BOTÕES */
+
+        /* ========================= */
+
+        .gradient-bg {
+
+            background: linear-gradient(135deg,#6366F1 0%,#8B5CF6 100%);
+
+        }
+
+        .gradient-bg:hover{
+
+            transform:translateY(-2px);
+
+            box-shadow:0 20px 40px rgba(99,102,241,.25);
+
+        }
+
+        .gradient-text{
+
+            background:linear-gradient(135deg,#6366F1,#8B5CF6);
+
+            -webkit-background-clip:text;
+
+            background-clip:text;
+
+            color:transparent;
+
+        }
+
+        /* ========================= */
+
+        /* HERO */
+
+        /* ========================= */
+
+        .hero-bg{
+
+            background:
+
+            radial-gradient(circle at top left,#EEF2FF 0%,transparent 40%),
+
+            radial-gradient(circle at bottom right,#DDD6FE 0%,transparent 35%),
+
+            #F8FAFC;
+
+        }
+
+        /* ========================= */
+
+        /* CARDS */
+
+        /* ========================= */
+
+        .card{
+
+            background:#fff;
+
+            border-radius:20px;
+
+            transition:.35s;
+
+            box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+        }
+
+        .card:hover{
+
+            transform:translateY(-8px);
+
+            box-shadow:0 25px 60px rgba(0,0,0,.08);
+
+        }
+
+        /* ========================= */
+
+        /* FLOAT */
+
+        /* ========================= */
+
+        .floating{
+
+            animation:floating 5s ease-in-out infinite;
+
+        }
+
+        @keyframes floating{
+
+            0%{
+
+                transform:translateY(0px);
+
+            }
+
+            50%{
+
+                transform:translateY(-12px);
+
+            }
+
+            100%{
+
+                transform:translateY(0px);
+
+            }
+
+        }
+
+        /* ========================= */
+
+        /* PULSE */
+
+        /* ========================= */
+
+        .pulse-animation{
+
+            animation:pulse 2s infinite;
+
+        }
+
+        @keyframes pulse{
+
+            0%{
+
+                transform:scale(1);
+
+            }
+
+            50%{
+
+                transform:scale(1.04);
+
+            }
+
+            100%{
+
+                transform:scale(1);
+
+            }
+
+        }
+
+        /* ========================= */
+
+        /* ANIMAÇÕES */
+
+        /* ========================= */
+
+        .fade-up{
+
+            animation:fadeUp .8s ease;
+
+        }
+
+        @keyframes fadeUp{
+
+            from{
+
+                opacity:0;
+
+                transform:translateY(35px);
+
+            }
+
+            to{
+
+                opacity:1;
+
+                transform:translateY(0);
+
+            }
+
+        }
+
+        /* ========================= */
+
+        /* GLASS */
+
+        /* ========================= */
+
+        .glass{
+
+            background:rgba(255,255,255,.55);
+
+            backdrop-filter:blur(18px);
+
+            border:1px solid rgba(255,255,255,.4);
+
+        }
+
+        /* ========================= */
+
+        img{
+
+            user-select:none;
+
+            -webkit-user-drag:none;
+
+        }
+
+    </style>
+
+    </head>
+    
+    <body>
+
+    
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="bg-white shadow-sm sticky top-0 z-50">
+
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+
+                <div class="flex items-center">
+
+                    <div class="w-10 h-10 rounded-full overflow-hidden mr-3">
+
+                        <img src="https://vmsoftware.netlify.app/TAG%20GM.png" alt="logo" style="width: 60px; margin-top: 10px;" >
+
+                    </div>
+
+                    <span class="text-xl font-bold">
+
+                        <span class="gradient-text"></span>Software
+
+                    </span>
+
+                </div>
+
+                <a href="#form"
+
+                    class="gradient-bg text-white px-5 py-2 rounded-lg font-semibold hover:scale-105 transition">
+
+                    Solicitar orçamento
+
+                </a>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="relative overflow-hidden bg-gray-50">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-indigo-100 to-purple-100 opacity-40"></div>
+
+            <div class="container mx-auto px-6 py-20 relative z-10">
+
+                <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                    <!-- TEXTO -->
+
+                    <div>
+
+                        <div class="inline-flex items-center bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full font-semibold mb-6">
+
+                            🌐 Sites Profissionais para Empresas
+
+                        </div>
+
+                        <h1 class="text-5xl font-extrabold leading-tight mb-6">
+
+                            Seu próximo cliente vai pesquisar sua empresa antes de entrar em contato.
+
+                        </h1>
+
+                        <h2 class="text-2xl text-gray-600 mb-8">
+
+                            A pergunta é:
+
+                            <strong class="gradient-text">
+
+                                O que ele vai encontrar?
+
+                            </strong>
+
+                        </h2>
+
+                        <p class="text-lg text-gray-600 mb-10 leading-relaxed">
+
+                            Criamos sites institucionais modernos,
+
+                            rápidos e personalizados para empresas
+
+                            que desejam transmitir credibilidade,
+
+                            conquistar novos clientes e crescer
+
+                            através da internet.
+
+                        </p>
+
+                        <div class="flex flex-wrap gap-4">
+
+                            <a href="#form"
+
+                                class="gradient-bg text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition pulse-animation">
+
+                                Quero meu Site Profissional
+
+                            </a>
+
+                            <a href="#portfolio"
+
+                                class="border border-indigo-500 text-indigo-600 px-8 py-4 rounded-xl font-bold hover:bg-indigo-50 transition">
+
+                                Ver Projetos
+
+                            </a>
+
+                        </div>
+
+                        <div class="flex items-center mt-10">
+
+                            <div class="flex -space-x-2">
+
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg"
+
+                                    class="w-10 h-10 rounded-full border-2 border-white">
+
+                                <img src="https://randomuser.me/api/portraits/women/31.jpg"
+
+                                    class="w-10 h-10 rounded-full border-2 border-white">
+
+                                <img src="https://randomuser.me/api/portraits/men/54.jpg"
+
+                                    class="w-10 h-10 rounded-full border-2 border-white">
+
+                            </div>
+
+                            <span class="ml-4 text-gray-600">
+
+                                <strong>+120 empresas</strong>
+
+                                confiaram na VM Software.
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MOCKUP -->
+
+                    <div class="relative">
+
+                        <img src="assets/hero-site.png"
+
+                            class="rounded-2xl shadow-2xl floating">
+
+
+
+                        <!-- CARD -->
+
+                        <div class="absolute -left-10 top-12 bg-white rounded-xl shadow-xl px-5 py-4">
+
+                            <div class="flex items-center">
+
+                                <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
+
+                                    ✔
+
+                                </div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-bold">
+
+                                        Site Online
+
+                                    </p>
+
+                                    <small class="text-gray-500">
+
+                                        Disponível 24h
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="absolute right-0 bottom-8 bg-white rounded-xl shadow-xl px-5 py-4">
+
+                            <div class="flex items-center">
+
+                                <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center">
+
+                                    💬
+
+                                </div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-bold">
+
+                                        WhatsApp
+
+                                    </p>
+
+                                    <small class="text-gray-500">
+
+                                        Integrado
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="absolute right-12 -top-6 bg-white rounded-xl shadow-xl px-5 py-4">
+
+                            <div class="flex items-center">
+
+                                <div class="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+
+                                    🚀
+
+                                </div>
+
+                                <div class="ml-4">
+
+                                    <p class="font-bold">
+
+                                        Google
+
+                                    </p>
+
+                                    <small class="text-gray-500">
+
+                                        SEO Ready
+
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROBLEMA ================= -->
+
+        <section class="py-24 bg-white">
+
+            <div class="container mx-auto px-6">
+
+                <div class="text-center mb-16">
+
+                    <span class="text-indigo-600 font-bold uppercase">
+
+                        O Problema
+
+                    </span>
+
+                    <h2 class="text-4xl font-bold mt-3">
+
+                        Seu Instagram não substitui um site.
+
+                    </h2>
+
+                    <p class="text-gray-600 text-lg mt-5 max-w-3xl mx-auto">
+
+                        Quando um cliente pesquisa sua empresa na internet e encontra apenas um perfil nas redes sociais,
+
+                        parte da confiança é perdida.
+
+                        Um site profissional mostra autoridade,
+
+                        organização e transmite muito mais credibilidade.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+
+                        <div class="text-5xl mb-5">
+
+                            ❌
+
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+
+                            Sem Site
+
+                        </h3>
+
+                        <p class="text-gray-600">
+
+                            Sua empresa perde autoridade logo no primeiro contato.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+
+                        <div class="text-5xl mb-5">
+
+                            📱
+
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+
+                            Apenas Instagram
+
+                        </h3>
+
+                        <p class="text-gray-600">
+
+                            As informações ficam limitadas e difíceis de encontrar.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+
+                        <div class="text-5xl mb-5">
+
+                            📉
+
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+
+                            Menos Credibilidade
+
+                        </h3>
+
+                        <p class="text-gray-600">
+
+                            Empresas sem site transmitem menos profissionalismo.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+
+                        <div class="text-5xl mb-5">
+
+                            🚪
+
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+
+                            Oportunidades Perdidas
+
+                        </h3>
+
+                        <p class="text-gray-600">
+
+                            Clientes procuram seu serviço diariamente e não encontram você.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= O QUE ENTREGAMOS ================= -->
+
+        <section class="py-24 bg-gray-50">
+
+            <div class="container mx-auto px-6">
+
+                <div class="text-center mb-16">
+
+                    <span class="text-indigo-600 font-bold uppercase">
+                        O que você recebe
+                    </span>
+
+                    <h2 class="text-4xl font-bold mt-3">
+                        Muito mais do que um site.
+                    </h2>
+
+                    <p class="text-gray-600 text-lg mt-5 max-w-3xl mx-auto">
+                        Desenvolvemos um site completo, preparado para representar sua empresa,
+                        gerar confiança e facilitar o contato dos seus futuros clientes.
+                    </p>
+
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+
+                        <div class="text-5xl mb-6">🌎</div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Site Responsivo
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Seu site funciona perfeitamente em celulares,
+                            tablets e computadores.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+
+                        <div class="text-5xl mb-6">💬</div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            WhatsApp Integrado
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Receba novos contatos diretamente pelo seu WhatsApp.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+
+                        <div class="text-5xl mb-6">⚡</div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Alta Performance
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Sites rápidos que proporcionam uma excelente experiência.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+
+                        <div class="text-5xl mb-6">🔍</div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            SEO Inicial
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Estrutura preparada para aparecer melhor no Google.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+
+                        <div class="text-5xl mb-6">🎨</div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Layout Exclusivo
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Nada de modelos prontos.
+                            Seu projeto será único.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
+
+                        <div class="text-5xl mb-6">🔒</div>
+
+                        <h3 class="text-xl font-bold mb-3">
+                            Segurança SSL
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Seu site protegido e com conexão segura.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROCESSO ================= -->
+
+        <section class="py-24 bg-white">
+
+            <div class="container mx-auto px-6">
+
+                <div class="text-center mb-20">
+
+                    <span class="text-indigo-600 font-bold uppercase">
+                        Nosso Processo
+                    </span>
+
+                    <h2 class="text-4xl font-bold mt-3">
+
+                        Desenvolvemos seu site em apenas 5 etapas.
+
+                    </h2>
+
+                </div>
+
+                <div class="grid lg:grid-cols-5 gap-8">
+
+                    <div class="text-center">
+
+                        <div class="w-20 h-20 mx-auto rounded-full gradient-bg flex items-center justify-center text-white text-3xl mb-6">
+                            1
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+                            Briefing
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Entendemos seu negócio, público e objetivos.
+                        </p>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <div class="w-20 h-20 mx-auto rounded-full gradient-bg flex items-center justify-center text-white text-3xl mb-6">
+                            2
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+                            Protótipo
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Criamos o layout exclusivo da sua empresa.
+                        </p>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <div class="w-20 h-20 mx-auto rounded-full gradient-bg flex items-center justify-center text-white text-3xl mb-6">
+                            3
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+                            Desenvolvimento
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Transformamos o projeto em um site rápido e moderno.
+                        </p>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <div class="w-20 h-20 mx-auto rounded-full gradient-bg flex items-center justify-center text-white text-3xl mb-6">
+                            4
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+                            Publicação
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Configuração do domínio, hospedagem e SSL.
+                        </p>
+
+                    </div>
+
+                    <div class="text-center">
+
+                        <div class="w-20 h-20 mx-auto rounded-full gradient-bg flex items-center justify-center text-white text-3xl mb-6">
+                            5
+                        </div>
+
+                        <h3 class="font-bold text-xl mb-3">
+                            Suporte
+                        </h3>
+
+                        <p class="text-gray-600">
+                            Acompanhamento após a entrega do projeto.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= DIFERENCIAIS ================= -->
+
+        <section class="py-24 bg-gray-900 text-white">
+
+            <div class="container mx-auto px-6">
+
+                <div class="text-center mb-16">
+
+                    <span class="text-indigo-400 font-bold uppercase">
+
+                        Por que escolher a VM Software?
+
+                    </span>
+
+                    <h2 class="text-4xl font-bold mt-3">
+
+                        Desenvolvemos soluções que ajudam empresas a crescer.
+
+                    </h2>
+
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="bg-gray-800 rounded-2xl p-8">
+
+                        <h3 class="text-2xl font-bold mb-4">
+                            💻 Código Próprio
+                        </h3>
+
+                        <p class="text-gray-300">
+                            Nada de plataformas limitadas ou templates genéricos.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-8">
+
+                        <h3 class="text-2xl font-bold mb-4">
+                            🚀 Alta Performance
+                        </h3>
+
+                        <p class="text-gray-300">
+                            Sites rápidos que melhoram a experiência dos visitantes.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-8">
+
+                        <h3 class="text-2xl font-bold mb-4">
+                            📈 SEO
+                        </h3>
+
+                        <p class="text-gray-300">
+                            Estrutura preparada para mecanismos de busca.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-8">
+
+                        <h3 class="text-2xl font-bold mb-4">
+                            🔒 Segurança
+                        </h3>
+
+                        <p class="text-gray-300">
+                            Certificado SSL e boas práticas de desenvolvimento.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-8">
+
+                        <h3 class="text-2xl font-bold mb-4">
+                            📱 Totalmente Responsivo
+                        </h3>
+
+                        <p class="text-gray-300">
+                            Experiência perfeita em qualquer dispositivo.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-gray-800 rounded-2xl p-8">
+
+                        <h3 class="text-2xl font-bold mb-4">
+                            🤝 Suporte Humanizado
+                        </h3>
+
+                        <p class="text-gray-300">
+                            Atendimento próximo antes, durante e após o projeto.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CTA INTERMEDIÁRIO ================= -->
+
+        <section class="py-20 gradient-bg text-white">
+
+            <div class="container mx-auto px-6">
+
+                <div class="max-w-4xl mx-auto text-center">
+
+                    <h2 class="text-4xl font-bold mb-6">
+
+                        Sua empresa merece uma presença digital à altura da qualidade do seu trabalho.
+
+                    </h2>
+
+                    <p class="text-xl opacity-90 mb-10">
+
+                        Solicite um orçamento sem compromisso e descubra como um site profissional pode fortalecer sua marca e atrair novos clientes.
+
+                    </p>
+
+                    <a href="#form"
+                    class="bg-white text-indigo-600 px-10 py-5 rounded-xl font-bold text-lg hover:shadow-xl transition">
+
+                        Solicitar Orçamento
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= MOCKUP ================= -->
+
+        <section class="py-24 bg-white">
+
+            <div class="container mx-auto px-6">
+
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+                    <div>
+
+                        <span class="text-indigo-600 font-bold uppercase">
+                            Design Responsivo
+                        </span>
+
+                        <h2 class="text-4xl font-bold mt-4 mb-6">
+                            Seu site perfeito em qualquer dispositivo.
+                        </h2>
+
+                        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+
+                            Hoje mais de 80% dos acessos acontecem pelo celular.
+
+                            Desenvolvemos seu site pensando primeiro na experiência do usuário,
+                            garantindo velocidade, organização e uma navegação agradável
+                            em smartphones, tablets e computadores.
+
+                        </p>
+
+                        <div class="space-y-4">
+
+                            <div class="flex items-center">
+
+                                ✔️ <span class="ml-3">Layout Responsivo</span>
+
+                            </div>
+
+                            <div class="flex items-center">
+
+                                ✔️ <span class="ml-3">Alta velocidade</span>
+
+                            </div>
+
+                            <div class="flex items-center">
+
+                                ✔️ <span class="ml-3">Compatível com todos os navegadores</span>
+
+                            </div>
+
+                            <div class="flex items-center">
+
+                                ✔️ <span class="ml-3">Preparado para SEO</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="relative flex justify-center">
+
+                        <img src="assets/mockup-devices.png"
+                            class="w-full max-w-xl floating">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SEGMENTOS ================= -->
+
+        <section class="py-24 bg-gray-50">
+
+            <div class="container mx-auto px-6">
+
+                <div class="text-center mb-16">
+
+                    <span class="text-indigo-600 font-bold uppercase">
+
+                        Segmentos
+
+                    </span>
+
+                    <h2 class="text-4xl font-bold mt-3">
+
+                        Desenvolvemos sites para qualquer negócio.
+
+                    </h2>
+
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+                    <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+
+                        🏥
+
+                        <h3 class="font-bold mt-4">
+                            Clínicas
+                        </h3>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+
+                        ⚖️
+
+                        <h3 class="font-bold mt-4">
+                            Advogados
+                        </h3>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+
+                        🏗
+
+                        <h3 class="font-bold mt-4">
+                            Engenharia
+                        </h3>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+
+                        🛒
+
+                        <h3 class="font-bold mt-4">
+                            Comércio
+                        </h3>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+
+                        🍔
+
+                        <h3 class="font-bold mt-4">
+                            Restaurantes
+                        </h3>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+
+                        🏋️
+
+                        <h3 class="font-bold mt-4">
+                            Academias
+                        </h3>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+
+                        🚗
+
+                        <h3 class="font-bold mt-4">
+                            Oficinas
+                        </h3>
+
+                    </div>
+
+                    <div class="bg-white rounded-xl p-8 text-center shadow-sm">
+
+                        🏢
+
+                        <h3 class="font-bold mt-4">
+                            Empresas
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FORMULÁRIO ================= -->
+
+        <section id="form" class="py-24 bg-white">
+
+        <div class="container mx-auto px-6">
+
+        <div class="max-w-6xl mx-auto bg-gradient-to-r from-indigo-50 to-purple-50 rounded-3xl overflow-hidden shadow-xl">
+
+        <div class="grid lg:grid-cols-2">
+
+        <div class="gradient-bg text-white p-12">
+
+        <span class="uppercase font-bold">
+
+        Solicite um orçamento
+
+        </span>
+
+        <h2 class="text-4xl font-bold mt-4 mb-6">
+
+        Vamos construir o site da sua empresa?
+
+        </h2>
+
+        <p class="opacity-90 leading-relaxed">
+
+        Conte um pouco sobre seu negócio.
+
+        Nossa equipe analisará seu projeto e retornará rapidamente com uma proposta personalizada.
+
+        </p>
+
+        <div class="mt-10 space-y-4">
+
+        <div>✔ Atendimento Humanizado</div>
+
+        <div>✔ Layout Exclusivo</div>
+
+        <div>✔ Desenvolvimento Próprio</div>
+
+        <div>✔ Suporte Especializado</div>
+
+        </div>
+
+        </div>
+
+        <div class="bg-white p-12">
+
+        <form id="leadForm" class="space-y-5">
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Nome"
+                required
+                class="w-full border rounded-xl p-4">
+
+            <input
+                id="company"
+                type="text"
+                placeholder="Empresa"
+                class="w-full border rounded-xl p-4">
+
+            <input
+                id="email"
+                type="email"
+                placeholder="E-mail"
+                required
+                class="w-full border rounded-xl p-4">
+
+            <input
+                id="phone"
+                type="tel"
+                placeholder="WhatsApp"
+                required
+                class="w-full border rounded-xl p-4">
+
+            <select
+                id="service"
+                class="w-full border rounded-xl p-4">
+
+                <option value="">Qual serviço você procura?</option>
+
+                <option>Site Institucional</option>
+
+                <option>Landing Page</option>
+
+                <option>Sistema Web</option>
+
+                <option>Aplicativo</option>
+
+            </select>
+
+            <textarea
+                id="description"
+                rows="4"
+                placeholder="Conte um pouco sobre seu projeto..."
+                class="w-full border rounded-xl p-4"></textarea>
+
+            <button
+                type="submit"
+                class="gradient-bg text-white w-full py-4 rounded-xl font-bold hover:shadow-xl transition">
+
+                Solicitar Orçamento
+
+            </button>
+
+        </form>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </section>
+
+
+
+        <!-- ================= FAQ ================= -->
+
+        <section class="py-24 bg-gray-50">
+
+        <div class="container mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+        <h2 class="text-4xl font-bold">
+
+        Perguntas Frequentes
+
+        </h2>
+
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+
+        <div class="bg-white rounded-xl p-6">
+
+        <h3 class="font-bold mb-3">
+
+        Quanto tempo leva para desenvolver um site?
+
+        </h3>
+
+        <p class="text-gray-600">
+
+        O prazo médio varia entre 7 e 20 dias úteis,
+        dependendo da complexidade do projeto.
+
+        </p>
+
+        </div>
+
+        <div class="bg-white rounded-xl p-6">
+
+        <h3 class="font-bold mb-3">
+
+        O domínio está incluso?
+
+        </h3>
+
+        <p class="text-gray-600">
+
+        Podemos registrar o domínio para você ou utilizar um domínio já existente.
+
+        </p>
+
+        </div>
+
+        <div class="bg-white rounded-xl p-6">
+
+        <h3 class="font-bold mb-3">
+
+        Vocês fazem hospedagem?
+
+        </h3>
+
+        <p class="text-gray-600">
+
+        Sim.
+        Também oferecemos hospedagem, manutenção e suporte contínuo.
+
+        </p>
+
+        </div>
+
+        <div class="bg-white rounded-xl p-6">
+
+        <h3 class="font-bold mb-3">
+
+        Posso solicitar alterações?
+
+        </h3>
+
+        <p class="text-gray-600">
+
+        Sim.
+        Durante o desenvolvimento realizamos ajustes para que o projeto fique exatamente como sua empresa precisa.
+
+        </p>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        </section>
+
+
+
+        <!-- ================= CTA FINAL ================= -->
+
+        <section class="py-24 gradient-bg text-white text-center">
+
+        <div class="container mx-auto px-6">
+
+        <h2 class="text-5xl font-bold mb-6">
+
+        Sua empresa merece um site profissional.
+
+        </h2>
+
+        <p class="text-xl opacity-90 max-w-3xl mx-auto mb-10">
+
+        Não deixe seu concorrente conquistar os clientes que poderiam ser seus.
+        Comece hoje mesmo a fortalecer sua presença digital.
+
+        </p>
+
+        <a
+        href="#form"
+        class="bg-white text-indigo-600 px-10 py-5 rounded-xl font-bold text-lg hover:shadow-2xl transition">
+
+        Quero meu Site Agora
+
+        </a>
+
+        </div>
+
+        </section>
+
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="bg-gray-900 text-gray-300 py-12">
+
+        <div class="container mx-auto px-6">
+
+        <div class="grid md:grid-cols-3 gap-10">
+
+        <div>
+
+        <h3 class="text-2xl font-bold text-white mb-4">
+
+        VM Software
+
+        </h3>
+
+        <p>
+
+        Desenvolvemos sites, sistemas web, landing pages e aplicativos para empresas que desejam crescer através da tecnologia.
+
+        </p>
+
+        </div>
+
+        <div>
+
+        <h4 class="font-bold text-white mb-4">
+
+        Contato
+
+        </h4>
+
+        <p>(11) 93222-3533</p>
+
+        <p>jv604014@gmail.com.com.br</p>
+
+        <p>São Paulo • SP</p>
+
+        </div>
+
+        <div>
+
+        <h4 class="font-bold text-white mb-4">
+
+        Redes Sociais
+
+        </h4>
+
+        <div class="flex gap-4 text-2xl">
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-linkedin"></i>
+
+        <i class="fab fa-whatsapp"></i>
+
+        </div>
+
+        </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 mt-10 pt-8 text-center text-sm">
+
+        © VM Software • Todos os direitos reservados.
+
+        </div>
+
+        </div>
+
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
